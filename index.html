@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi amiga Deysi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="pantalla-inicio">
+        <h1 class="titulo-principal">Tengo algo para ti...</h1>
+        <button id="boton-abrir" onclick="revelarCarta()">Presiona aquí 💛</button>
+    </div>
+
+    <div id="carta-secreta" style="display: none;">
+        <div class="hoja-carta">
+            <h1>¡Hola Deysi!</h1>
+            <p>Quería darte este detalle especial...</p>
+            <img src="flores-amarillas.png" alt="Flores" class="foto-carta">
+            <p>¡Espero que te guste mucho!</p>
+        </div>
+    </div>
+
+    <script>
+        function revelarCarta() {
+            // Escondemos el botón y el título inicial
+            document.getElementById('pantalla-inicio').style.display = 'none';
+            // Mostramos la carta
+            document.getElementById('carta-secreta').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+
